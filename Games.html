@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+			   font-family: Arial, Helvetica, sans-serif;
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  background-color: DodgerBlue;	
+  padding:5px;
+}
+
+.flex-container div:hover {
+   text-decoration:none;
+   color: #005A9C;
+   background-color: #005A9C;
+}
+ 
+.flex-item {
+  text-align: center;
+  background-color: White;	
+  width: auto ;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  background-color: DodgerBlue;
+  display: grid;
+  width: 100%px;
+  height:350px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 50px 305px; 
+  grid-template-areas:
+      "Header Header Header Header"
+      "Valorant Fortnite Roblox Fifa";
+     
+}
+
+.Valorant {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Valorant;
+  background-color: white;
+ }
+.Fortnite {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Fortnite;
+  background-color: white;
+ }
+.Roblox {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Roblox;
+  background-color: white;
+ }
+.Fifa {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Fifa;
+  background-color: white;
+ }
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  grid-area: Header;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 2500px ;
+  grid-template-columns: 447px ;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr ; 	
+  grid-template-areas:
+      "Header"
+	  "Valorant" 
+	  "Fortnite" 
+	  "Roblox" 
+	  "Fifa"; 
+	  
+}
+}	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header"> GAMES	 <br>(click picture to see the game)</div>
+    <div class="Valorant"><td><a href="https://playvalorant.com/en-us/"><img src="Valorant.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+    <div class="Fortnite"><td><a href="https://www.epicgames.com/fortnite/en-US/home"><img src="Fortnite.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="Roblox"><td><a href="https://web.roblox.com/home"><img src="Roblox.png" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="Fifa"><td><a href="https://www.ea.com/games/fifa/fifa-22"><img src="Fifa.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+ </div>
+ <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Home</a></div>
+   <div class="flex-item"><a href="manga.html">Manga/Manhua I Read</a></div>
+ </div>     
+ <div class="flex-container">
+   <div class="flex-item"> <a href="Movies.html">Movies I watched</a></div> 
+   <div class="flex-item"> <a href="Games.html">Games I play</a></div> 
+   <div class="flex-item"> <a href="Soccer.html">Soccer Players I like </a></div> 
+</div>
+</body>
+</html>
